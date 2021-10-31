@@ -68,4 +68,4 @@ except getopt.GetoptError:
 except KeyboardInterrupt:
     pass
 
-print("Finishing program...")
+print("\nFinishing program...")
