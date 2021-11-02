@@ -1,15 +1,19 @@
-# ALUMNOS que han realizado la practica
-# Antonio Andres Perez DNI: 47580369Q Titulacion: IST
-# Javier Zapatero Lera DNI:
+"""
+ALUMNOS que han realizado la practica
+Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+Javier Zapatero Lera DNI: 54300753F Titulacion: IST
+Hemos realizado el programa con implementacion de color (solo compatible con distribuciones UNIX o macOS)
 
+"""
 import random
-
+    # --------------------------------------------------------------------------------------------- #
+                                    # CLASS ENEMY (clase padre)
+    # --------------------------------------------------------------------------------------------- #
 class Enemy:
-    def __init__(self, hp, dmg, stage):    # debemos conocer el daño, la vida maxima y la vida actual
+    def __init__(self, hp, dmg, stage):
         self.hp = hp
         self.dmg = dmg
         self.stage = stage
-    # Devolver el nombre de su tipo(clase)
 
     def __str__(self):
         print(f"HP: {self.hp} DMG: {self.dmg}")
@@ -24,15 +28,13 @@ class Enemy:
         self.hp -= n
         if self.hp <= 0:
             self.hp = 0
-            # Como podemos saber cual es el enemigo que murió
-        else:
-            print(f"{self.__class__.__name__} ...")
-        return self.hp  # ???
 
     def display_attributes(self):
-        print(f"{self.__class__.__name__}: Stats: {self.hp}HP and {self.dmg}DMG")
+        print(f"{self.__class__.__name__}: Stats: {self.hp} HP and {self.dmg} DMG")
 
-
+    # --------------------------------------------------------------------------------------------- #
+                                     # MONSTERS CLASS (clases hijas)
+    # --------------------------------------------------------------------------------------------- #
 class PartialExam(Enemy):
     HP_MAX = 20
     DMG = 6

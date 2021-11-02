@@ -1,11 +1,19 @@
-# ALUMNOS que han realizado la practica
-# Antonio Andres Perez DNI: 47580369Q Titulacion: IST
-# Javier Zapatero Lera DNI:
+"""
+ALUMNOS que han realizado la practica
+Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+Javier Zapatero Lera DNI: 54300753F Titulacion: IST
+Hemos realizado el programa con implementacion de color (solo compatible con distribuciones UNIX o macOS)
+
+"""
 
 import random
 
+    # --------------------------------------------------------------------------------------------- #
+                                 # CHARACTER CLASS (clase padre)
+    # --------------------------------------------------------------------------------------------- #
+
 class Character:
-    def __init__(self, hp_max, dmg, hp):    # debemos conocer el daño, la vida maxima y la vida actual
+    def __init__(self, hp_max, dmg, hp):
         self.hp_max = hp_max
         self.dmg = dmg
         self.hp = hp
@@ -25,7 +33,7 @@ class Character:
 
     def decrease_hp(self, n):
         self.hp -= n
-        if self.hp <= 0: # murio
+        if self.hp <= 0:
             self.hp = 0
 
     def level_up(self):
@@ -34,6 +42,10 @@ class Character:
 
     def display_attributes(self):
         print(f"{self.__class__.__name__}: Stats: {self.hp} HP and {self.dmg} DMG")
+
+    # --------------------------------------------------------------------------------------------- #
+                                # PLAYERS CLASS (clases hijas)
+    # --------------------------------------------------------------------------------------------- #
 
 class Bookworm(Character):
     HP_MAX = 25
@@ -44,12 +56,12 @@ class Bookworm(Character):
         print(f"BookWorm -> Stats: {Bookworm.HP_MAX} HP, {Bookworm.DMG} DMG")
 
     def __init__(self, hp=HP_MAX):
-        super().__init__(Bookworm.HP_MAX, Bookworm.DMG, hp)  # super hace referencia a padre
+        super().__init__(Bookworm.HP_MAX, Bookworm.DMG, hp)  # super hace referencia al padre
 
 
 class Worker(Character):
-    HP_MAX = 100
-    DMG = 100
+    HP_MAX = 40
+    DMG = 10
 
     @staticmethod
     def print_info():

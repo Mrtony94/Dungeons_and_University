@@ -1,6 +1,11 @@
-# ALUMNOS que han realizado la practica
-# Antonio Andres Perez DNI: 47580369Q Titulacion: IST
-# Javier Zapatero Lera DNI:
+"""
+
+ALUMNOS que han realizado la practica
+Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+Javier Zapatero Lera DNI: 54300753F Titulacion: IST
+Hemos realizado el programa con implementacion de color (solo compatible con distribuciones UNIX o macOS)
+
+"""
 
 import getopt
 import sys
@@ -14,8 +19,9 @@ class UsageError(Exception):
         super().__init__(f"{Game.bcolors.MONSTER}[ERROR]: python main [-f n] [-s n]")
 
 
-# ---------------------------------------- #
-# ---------------------------------------- #
+    # --------------------------------------------------------------------------------------------- #
+                                         # ARGUMENTOS DEF
+    # --------------------------------------------------------------------------------------------- #
 
 def parse_args():
     args, trash = getopt.getopt(sys.argv[1:], 'f:s:', ["file=", "stages="])     # version corta - y version larga --
@@ -29,10 +35,6 @@ def parse_args():
             stages = v
 
     return file, stages
-
-
-# ---------------------------------------- #
-# ---------------------------------------- #
 
 
 def check_args(file, stages):
@@ -53,8 +55,9 @@ def check_args(file, stages):
     return file_ok, stages_ok
 
 
-# ---------------------------------------- #
-# ---------------------------------------- #
+    # --------------------------------------------------------------------------------------------- #
+                                               # MAIN
+    # --------------------------------------------------------------------------------------------- #
 
 
 try:
