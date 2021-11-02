@@ -1,8 +1,9 @@
 """
-ALUMNOS que han realizado la practica
-Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+
+ALUMNOS que han realizado la práctica:
+Antonio Andrés Pérez DNI: 47580369Q Titulacion: IST
 Javier Zapatero Lera DNI: 54300753F Titulacion: IST
-Hemos realizado el programa con implementacion de color (solo compatible con distribuciones UNIX o macOS)
+Hemos realizado el programa con implementación de color (solo compatible con distribuciones UNIX o macOS)
 
 """
 
@@ -19,7 +20,7 @@ class Character:
         self.hp = hp
 
     def __str__(self):
-        print(f"HP_MAX: {self.hp_max} HP: {self.hp} DMG: {self.dmg}") # devolver información util para el juego
+        print(f"HP_MAX: {self.hp_max} HP: {self.hp} DMG: {self.dmg}")    # devolver información util para el juego
 
     def attack(self, enemy):
         dmg_attack = random.randint(1, self.dmg)

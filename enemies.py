@@ -1,8 +1,9 @@
 """
-ALUMNOS que han realizado la practica
-Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+
+ALUMNOS que han realizado la práctica:
+Antonio Andrés Pérez DNI: 47580369Q Titulacion: IST
 Javier Zapatero Lera DNI: 54300753F Titulacion: IST
-Hemos realizado el programa con implementacion de color (solo compatible con distribuciones UNIX o macOS)
+Hemos realizado el programa con implementación de color (solo compatible con distribuciones UNIX o macOS)
 
 """
 import random
