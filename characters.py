@@ -1,3 +1,7 @@
+# ALUMNOS que han realizado la practica
+# Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+# Javier Zapatero Lera DNI:
+
 import random
 
 class Character:

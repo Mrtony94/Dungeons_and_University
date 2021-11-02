@@ -1,11 +1,17 @@
+# ALUMNOS que han realizado la practica
+# Antonio Andres Perez DNI: 47580369Q Titulacion: IST
+# Javier Zapatero Lera DNI:
+
 import getopt
 import sys
 import os
+
+import game
 from game import *
 
 class UsageError(Exception):
     def __init__(self):
-        super().__init__("[ERROR]: python main [-f n] [-s n]")
+        super().__init__(f"{Game.bcolors.MONSTER}[ERROR]: python main [-f n] [-s n]")
 
 
 # ---------------------------------------- #
@@ -59,13 +65,13 @@ try:
         game.play_game()
     else:
         if not stages_ok:
-            print("The number of stages must be between 1 and 10.")
+            print(f"{Game.bcolors.STAGE}The number of stages must be between 1 and 10.")
         if not file_ok:
-            print("The format of the chosen file is incorrect. You must provide a filename that ends "
+            print(f"{Game.bcolors.RESET}The format of the chosen file is incorrect. You must provide a filename that ends "
                   "either with .txt .json. Finishing program")
 except getopt.GetoptError:
     raise UsageError
 except KeyboardInterrupt:
     pass
 
-print("\nFinishing program...")
+print(f"\nFinishing program...")
