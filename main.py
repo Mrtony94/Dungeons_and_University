@@ -70,7 +70,8 @@ try:
         if not stages_ok:
             print(f"{Game.bcolors.STAGE}The number of stages must be between 1 and 10.")
         if not file_ok:
-            print(f"{Game.bcolors.RESET}The format of the chosen file is incorrect. You must provide a filename that ends "
+            print(f"{Game.bcolors.RESET}The format of the chosen file is incorrect. "
+                  f"You must provide a filename that ends "
                   "either with .txt .json. Finishing program")
 except getopt.GetoptError:
     raise UsageError

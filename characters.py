@@ -13,6 +13,7 @@ import random
                                  # CHARACTER CLASS (clase padre)
     # --------------------------------------------------------------------------------------------- #
 
+
 class Character:
     def __init__(self, hp_max, dmg, hp):
         self.hp_max = hp_max
@@ -47,6 +48,7 @@ class Character:
     # --------------------------------------------------------------------------------------------- #
                                 # PLAYERS CLASS (clases hijas)
     # --------------------------------------------------------------------------------------------- #
+
 
 class Bookworm(Character):
     HP_MAX = 25
@@ -94,4 +96,5 @@ class Whatsapper(Character):
 
     def __init__(self, hp=HP_MAX):
         super().__init__(Whatsapper.HP_MAX, Whatsapper.DMG, hp)
+
 

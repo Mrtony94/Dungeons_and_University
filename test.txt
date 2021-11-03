@@ -1,1 +1,1 @@
-{"stages": 2, "current_stage": 2, "player_turn": 1, "players_list": [{"class": "Bookworm", "hp": 9.25}, {"class": "Procrastinator", "hp": 21.5}], "enemies_list": [{"class": "TheoricalClass", "hp": 1}, {"class": "TheoricalClass", "hp": 4}, {"class": "TheoricalClass", "hp": 7}]}
+{"stages": 1, "current_stage": 1, "player_turn": 0, "players_list": [{"class": "Bookworm", "hp": 19}, {"class": "Worker", "hp": 22}], "enemies_list": [{"class": "Teacher", "hp": 5}, {"class": "Teacher", "hp": 15}]}
