@@ -47,7 +47,7 @@ def check_args(file, stages):
 
     try:
         stages = int(stages)
-        if stages < Game.MIN_STAGES or stages > Game.MAX_STAGES:    # comprobamos que los estados estan dentro del rango
+        if stages < Game.MIN_STAGES or stages > Game.MAX_STAGES:    # comprobamos que los estados están dentro del rango
             stages_ok = False
     except ValueError:
         stages_ok = False
