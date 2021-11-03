@@ -1,0 +1,1 @@
+{"stages": 1, "current_stage": 1, "player_turn": 1, "players_list": [{"class": "Bookworm", "hp": 25}, {"class": "Worker", "hp": 40}], "enemies_list": [{"class": "PartialExam", "hp": 17}, {"class": "Teacher", "hp": 15}, {"class": "PartialExam", "hp": 20}]}
