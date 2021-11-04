@@ -10,7 +10,7 @@ Hemos realizado el programa con implementación de color (solo compatible con di
 import random
 
     # --------------------------------------------------------------------------------------------- #
-                                 # CHARACTER CLASS (clase padre)
+    # CHARACTER CLASS (clase padre)
     # --------------------------------------------------------------------------------------------- #
 
 
@@ -46,7 +46,7 @@ class Character:
         print(f"{self.__class__.__name__}: Stats: {self.hp} HP and {self.dmg} DMG")
 
     # --------------------------------------------------------------------------------------------- #
-                                # PLAYERS CLASS (clases hijas)
+    # PLAYERS CLASS (clases hijas)
     # --------------------------------------------------------------------------------------------- #
 
 
