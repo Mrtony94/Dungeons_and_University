@@ -11,20 +11,20 @@ import getopt
 import sys
 import os
 
-import game
 from game import *
+
 
 class UsageError(Exception):
     def __init__(self):
         super().__init__(f"{Game.bcolors.MONSTER}[ERROR]: python main [-f n] [-s n]")
 
+    # --------------------------------------------------------------------------------------------- #
+    # ARGUMENTOS DEF
+    # --------------------------------------------------------------------------------------------- #
 
-    # --------------------------------------------------------------------------------------------- #
-                                         # ARGUMENTOS DEF
-    # --------------------------------------------------------------------------------------------- #
 
 def parse_args():
-    args, trash = getopt.getopt(sys.argv[1:], 'f:s:', ["file=", "stages="])     # version corta - y version larga --
+    args, trash = getopt.getopt(sys.argv[1:], 'f:s:', ["file=", "stages="])  # version corta - y version larga --
 
     file = None
     stages = 1
@@ -41,22 +41,21 @@ def check_args(file, stages):
     file_ok = True
     stages_ok = True
 
-    if file is not None and (not(file.endswith(".txt") or file.endswith(".json")) or not os.path.isfile(file)):
+    if file is not None and (not (file.endswith(".txt") or file.endswith(".json")) or not os.path.isfile(file)):
         # comprobamos que el archivo es .txt o .json
         file_ok = False
 
     try:
         stages = int(stages)
-        if stages < Game.MIN_STAGES or stages > Game.MAX_STAGES:    # comprobamos que los estados están dentro del rango
+        if stages < Game.MIN_STAGES or stages > Game.MAX_STAGES:  # comprobamos que los estados están dentro del rango
             stages_ok = False
     except ValueError:
         stages_ok = False
 
     return file_ok, stages_ok
 
-
     # --------------------------------------------------------------------------------------------- #
-                                               # MAIN
+    # MAIN
     # --------------------------------------------------------------------------------------------- #
 
 
