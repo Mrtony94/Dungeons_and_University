@@ -96,5 +96,3 @@ class Whatsapper(Character):
 
     def __init__(self, hp=HP_MAX):
         super().__init__(Whatsapper.HP_MAX, Whatsapper.DMG, hp)
-
-
